@@ -19,6 +19,8 @@
     python3 alien_invasion.py
  ```
  ## Sample Images
+ ### Start of game
  ![Start game](https://github.com/RasbeeTech/Alien_Invasion/blob/main/about/images/readme_image_start.png)  
+ ### Game play
  ![Game play](https://github.com/RasbeeTech/Alien_Invasion/blob/main/about/images/readme_image_game_play.png)  
  
