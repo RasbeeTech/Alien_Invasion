@@ -75,7 +75,7 @@ class Scoreboard:
         for ship_number in range(self.stats.ships_left):
             ship = Ship(self.ai_game)
             ship.rect.x = 10 + ship_number * ship.rect.width
-            ship.rext.y = 10
+            ship.rect.y = 10
             self.ships.add(ship)
 
     def show_score(self):
