@@ -1,6 +1,7 @@
-# Alien_Invasion
+# Alien_Invasion V 1.1
  
- Alien_Invasion is modern take on the classic arcade game Space Invaders.
+ Alien_Invasion is modern take on the classic arcade game Space Invaders.  
+ V 1.1: Added graphics and effects
  
  ## About
  Python version: 3.8.7  
@@ -16,11 +17,10 @@
  ## Run
  to run the application enter the following command in terminal:
  ```bash
-    python3 alien_invasion.py
+  python3 alien_invasion.py
  ```
  ## Sample Images
- ### Start of game
- ![Start game](https://github.com/RasbeeTech/Alien_Invasion/blob/main/about/images/readme_image_start.png)  
+ 
  ### Game play
- ![Game play](https://github.com/RasbeeTech/Alien_Invasion/blob/main/about/images/readme_image_game_play.png)  
+ ![Game play](https://github.com/RasbeeTech/Alien_Invasion/blob/main/about/images/ralien_invasion_game_play.gif)  
  
