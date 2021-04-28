@@ -22,5 +22,5 @@
  ## Sample Images
  
  ### Game play
- ![Game play](https://github.com/RasbeeTech/Alien_Invasion/blob/main/about/images/ralien_invasion_game_play.gif)  
+ ![Game play](https://github.com/RasbeeTech/Alien_Invasion/blob/V2/about/images/alien_invasion_game_play.gif)  
  
