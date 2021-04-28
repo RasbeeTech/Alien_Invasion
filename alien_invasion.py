@@ -10,6 +10,7 @@ from button import Button
 from ship import Ship
 from bullet import Bullet
 from alien import Alien
+from explosion import Explosion
 
 
 class AlienInvasion:
@@ -35,6 +36,7 @@ class AlienInvasion:
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
         self.aliens = pygame.sprite.Group()
+        self.explosions = pygame.sprite.Group()
 
         self._create_fleet()
 
@@ -125,6 +127,9 @@ class AlienInvasion:
                 self.bullets.remove(bullet)
         self._check_bullet_alien_collision()
 
+        # Update explosion effects
+        self.explosions.update()
+
     def _check_bullet_alien_collision(self):
         """Respond to bullet-alien collision."""
         # Check for any bullets that have hit aliens.
@@ -134,6 +139,12 @@ class AlienInvasion:
         if collisions:
             for aliens in collisions.values():
                 self.stats.score += self.settings.alien_points * len(aliens)
+                for alien in aliens:
+                    # Display explosion effect at collision location
+                    alien_center = alien.rect.center
+                    expl = Explosion(alien_center)
+                    self.explosions.add(expl)
+
             self.sb.prep_score()
             self.sb.check_high_score()
         # Create new fleet if all aliens are destroyed.
@@ -236,7 +247,7 @@ class AlienInvasion:
 
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen"""
-        self.screen.fill(self.settings.bg_color)
+        self.screen.blit(self.settings.bg_image, (0, 0))
         self.ship.blitme()
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
@@ -248,6 +259,9 @@ class AlienInvasion:
         # Draw the play button if the game is inactive.
         if not self.stats.game_active:
             self.play_button.draw_button()
+
+        # Draw explosion effects.
+        self.explosions.draw(self.screen)
 
         pygame.display.flip()
 
