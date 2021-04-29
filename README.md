@@ -11,8 +11,9 @@
  Shoot down as many alien ships as you can and stay alive.
  
  ## How to play
- Movement: Left and Right arrow keys
- Shoot: Space-bar
+ ![Left Arrow Key](https://github.com/RasbeeTech/Alien_Invasion/blob/main/about/images/keyboard_left_arrow.png)![Right Arrow Key](https://github.com/RasbeeTech/Alien_Invasion/blob/main/about/images/keyboard_right_arrow.png): Move spaceship left or right.  
+ ![Space Key](https://github.com/RasbeeTech/Alien_Invasion/blob/main/about/images/keyboard_space.png): Shoot  
+ !['Q' Key](https://github.com/RasbeeTech/Alien_Invasion/blob/main/about/images/keyboard_q.png): Quit  
  
  ## Run
  to run the application enter the following command in terminal:
